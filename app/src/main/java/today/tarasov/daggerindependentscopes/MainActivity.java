@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // injecting classA from ScopeA
-        App.getInstance().getComponentA().inject(this);
+        App.getInstance().createComponentA().inject(this);
         // injection classB from ScopeB
-        App.getInstance().getComponentB().inject(this);
+        App.getInstance().createComponentB().inject(this);
 
         if (classA == null || classB == null) {
             throw new RuntimeException("Injection failed");

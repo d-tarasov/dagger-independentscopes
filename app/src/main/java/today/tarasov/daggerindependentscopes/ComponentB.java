@@ -9,6 +9,6 @@ import dagger.Subcomponent;
 @Subcomponent(modules = ModuleB.class)
 public interface ComponentB {
 
-    void inject(MainActivity mainActivity);
+    ClassB provideClassB();
 
 }

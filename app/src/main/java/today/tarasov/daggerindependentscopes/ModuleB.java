@@ -1,5 +1,7 @@
 package today.tarasov.daggerindependentscopes;
 
+import javax.inject.Named;
+
 import dagger.Module;
 import dagger.Provides;
 
